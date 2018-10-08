@@ -1,0 +1,40 @@
+// aqui se importan los componentes del proyecto
+
+*
+{
+    box-sizing:  border-box;
+}
+
+body
+{
+    font-family: $main-font;
+    font-size: $font-size;
+    line-height: 1.5;
+    color: color(gris-oscuro);
+
+}
+
+h1
+{
+   font-size: $h1-size;
+}
+h2
+{
+  font-size: $h2-size;
+}
+h3
+{
+  font-size: $h3-size;
+}
+
+h1.h2.h3
+{
+  line-height: 1.3;
+  font-weight: $light;
+  color: color(gris-oscuro);
+}
+
+img
+{
+  max-width: 100%;
+}

@@ -1,0 +1,49 @@
+.course-card
+{
+   margin-left: $gutter;
+   margin-right: $gutter;
+   margin-bottom: $gutter * 2;
+   position: relative;
+
+   &__img
+   {
+     display:block;
+   }
+   &__footer
+   {
+     position:absolute;
+     bottom: 0;
+     width: 100%;
+     height: rem(36px);
+     background: rgba(#000,.6);
+     color: color(blanco);
+     display: flex;
+     justify-content: space-between;
+     padding: 0 1em;
+     align-items: center;
+     font-size: .9em;
+   }
+
+   &__progress {
+     display: flex;
+     &__bar {
+       border: 1px solid color(blnaco);
+       width: rem(65px);
+       height: rem(16px);
+       margin-right: .5em;
+       background: linear-gradient(120deg, color(rojo) 70%, transparent 70%);
+
+     }
+   }
+
+   .icon-start
+   {
+     position: absolute;
+     border:2px solid red;
+     top: 1em;
+     left: 1em;
+     text-decoration:none;
+     color: color(azul-claro);
+
+   }
+}

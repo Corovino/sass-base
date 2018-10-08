@@ -1,0 +1,40 @@
+.main-nav
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 90%;
+  z-index: z-index(offcanvas);
+  background: color(azul-oscuro);
+  height: 100%;
+
+  &__header
+  {
+     background: color(azul-medio);
+     color: color(blanco);
+     padding: ($gutter * 2.5) $gutter;
+  }
+  &__user
+  {
+    display: flex;
+    &__img
+    {
+      width: em(112px / 2);
+      height: em(112px / 2);
+      margin-right: 1em;
+    }
+
+    &__name
+    {
+      font-size: 1.5em;
+      line-height: 1;
+      //margin top para centrar verticalmente los textos
+      margin-top: .3em;
+    }
+    &__bio
+    {
+      font-size: .85em;
+      line-height: 1;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+//
+   Created by hebertromerosastoque on 9/2/17.
+include template/index
+append config
+    -currentPage = "course-page"
+    -title = "Sass desde cero"
+block header
+    include blocks/header
+
+block main
+    header.course-header
+        img(src="img/sass-poster-720_0.jpg")
+        .course-header__teacher
+            img(src="img/profile.png").course-header__teacher__img
+            .course-header__teacher__data
+                .course-header__teacher__name Hebert Romero
+                    small Profesor
+                a(href="#").course-header__teacher__ask.button.cta Solicitar Info
+    .content
+        h2.content-title Contenido del curso
+        .course-content
+            .icon-play.course-content__item Introduccion a Sass
+            .icon-play.course-content__item Introduccion a JS
+            .icon-play.course-content__item Introduccion a Ruby
+            .icon-play.course-content__item Introduccion a PHP
+            .icon-play.course-content__item Introduccion a Python
+            .icon-play.course-content__item Introduccion a Angular
+            .icon-play.course-content__item Introduccion a Ionic
+
+

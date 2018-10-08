@@ -1,0 +1,72 @@
+//Aqui se guardan las variables
+
+
+//tipografia
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+//importar iconos
+@import url("https://file.myfontastic.com/dBcVwei3qGmMSYq23Z36pd/icons.css");
+
+//fuentes
+$main-font :  'Ubuntu', sans-serif;
+$light : 300;
+$normal : 400;
+
+
+//Gutter
+$gutter : 1em;
+
+
+// z-index variables
+
+$z-index: (
+   toltip : 100,
+   modal :500,
+   overlay:700,
+   offcanvas : 1000
+);
+
+@function z-index($val)
+{
+   @return map-get($z-index, $val);
+}
+
+
+//convertir pixel a em
+
+@function em( $el, $parent:16px )
+{
+   @return  ($el / $parent) * 1em;
+}
+@function rem( $el)
+{
+  @return  ($el / 16px) * 1rem;
+}
+
+
+$font-size: em(14px);
+$h3-size :$font-size * 1.15;
+$h2-size :$font-size * 1.35;
+$h1-size :$font-size * 1.7;
+
+$colors:(
+    azul-base : #00B1F3,
+    azul-oscuro :#03151F,
+    azul-medio : #006BAB,
+    azul-claro : #29DAFF,
+    rojo: #FF3532,
+    rojo-claro : #FF4946,
+    gris-claro :#19242B,
+    gris-oscuro : #CDCDCD,
+    success: #00CB30,
+    blanco : #ffffff
+);
+
+@function color($color)
+{
+   @return map_get($colors,$color);
+}
+
+@function img($img)
+{
+    @return url('../img/#{$img}');
+}

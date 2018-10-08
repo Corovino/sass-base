@@ -1,0 +1,21 @@
+.main-header
+{
+   background: color(azul-medio);
+   color : color(blacno);
+   display: flex;
+   padding: 0 $gutter;
+   height: rem(50px);
+   line-height: rem(50px);
+   font-size: 1.0rem;
+   position:fixed;
+   top : 0;
+   width: 100%;
+   border-bottom: 1px solid rgba(color(azul-oscuro), .2);
+   z-index: z-index(overlay);
+
+}
+
+body
+{
+   margin-top: 150px;
+}

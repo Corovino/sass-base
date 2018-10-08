@@ -1,0 +1,18 @@
+
+extends template/index
+append config
+  -currentPage = "login-page"
+block main
+    .main-home
+        img(src="img/grubiz.png").logo
+        form.login-form
+            .login-form__item
+                label(for="username").icon-user.login-form__label Nombre de usuario
+                input(type="text" name="username" id="username").login-form__input
+            .login-form__item
+                label(for="password").icon-password.login-form__label Contraseña
+                input(type="password" name="password" id="password").login-form__input
+            input(type="submit" name="password" id="Ingresar").login-form__submit.button.cta
+        .reset-password
+          h3 ¿Ha olvidado su contraseña?
+            a(href="#") Recuperar
